@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <appSettings>
+	<!--二代证端口号，1~16表示串口号，1001表示USB口，0表示自动选择-->
+    <add key="Card2Port" value="1001"/>
+    <!--二代证超时时间 毫秒-->
+    <add key="Card2TimeOut" value="20000"/>
+  	<!--视频截图保存位置-->
+    <add key="SnapshotSavePath" value="C:\\XUHUI_ZZJ\\CameraSave"/>
+  	<!--视频截图间隔-->
+	<add key="SnapshotInterval" value="3000"/>
+  	<!--视频截图时长 0表示只取1张就返回 其他毫秒为单位-->
+	<add key="SnapshotTime" value="0"/>
+  	<!--顶部摄像头索引位置-->
+	 <add key="TopCameraIndex" value="0"/>
+    <!--底部摄像头索引位置-->
+    <add key="BottomCameraIndex" value="-1"/>
+	  <!--扫描仪端口号-->
+	<add key="ScannnerPort" value="5"/>
+   <!--扫描仪自动超时时间 毫秒-->
+   <add key="ScannnerTimeOut" value="5000"/>
+   <!--打印内容文件-->
+   <add key="PrintTextPath" value="C:\\print.txt"/>
+    <!--凭条纸将尽检测端口号-->
+    <add key="PrintStatePort" value="2"/>
+    <!--纸币器端口-->
+    <add key="PostPort" value="COM1"/>
+    <!--日志保存路径-->
+    <add key="LogSavePath" value="D:\\XUHUI_ZZJ\\Log"/>
+    <!--读卡器端口-->
+    <add key="ReadCardPort" value="3"/>
+    <!--读卡器端口-->
+    <add key="ReadCardType" value="CRT_310"/>
+    <!--发卡器名称-->
+    <add key="CardSenderName" value="Evolis Primacy"/>
+    <!--推杆端口-->
+    <add key="TGPort" value="COM5"/>
+    <!--门锁端口-->
+    <add key="LockPort" value="COM4"/>
+  </appSettings>
+</Root>

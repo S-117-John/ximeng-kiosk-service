@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{778BE1A8-0813-43A8-8263-1DDF34943AD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoServiceSDK</RootNamespace>
+    <AssemblyName>AutoServiceSDK</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BusinessFacade.His">
+      <HintPath>..\..\SkynetHisService\BusinessFacade.His\bin\Debug\BusinessFacade.His.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityData.His">
+      <HintPath>..\..\SkynetHisService\BusinessFacade.His\bin\Debug\EntityData.His.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport">
+      <HintPath>..\..\公共程序集\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemFramework, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TWHIS\SystemFramework\bin\Debug\SystemFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="TiuWeb.ReportBase">
+      <HintPath>..\..\公共程序集\TiuWeb.ReportBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ISdkService\IMoneyService.cs" />
+    <Compile Include="ISdkService\IPrintManage.cs" />
+    <Compile Include="ISdkService\ISendCardInterFace.cs" />
+    <Compile Include="POSInterface\IPOSFactory.cs" />
+    <Compile Include="POSInterface\POS001\YLSWPosClass.cs" />
+    <Compile Include="POSInterface\POS002\JLXYPosClass.cs" />
+    <Compile Include="POSInterface\POS003\Dialogs\FrmPasswordBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSInterface\POS003\Dialogs\FrmPasswordBox.Designer.cs">
+      <DependentUpon>FrmPasswordBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSInterface\POS003\Dialogs\FrmReadCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSInterface\POS003\Dialogs\FrmReadCard.Designer.cs">
+      <DependentUpon>FrmReadCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSInterface\POS003\DictionaryHelper.cs" />
+    <Compile Include="POSInterface\POS003\SingleeMethods.cs" />
+    <Compile Include="POSInterface\POS003\SingleePosClass.cs" />
+    <Compile Include="POSInterface\POSBase.cs" />
+    <Compile Include="POSInterface\POSTransType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SdkData\IDCardInfro.cs" />
+    <Compile Include="SdkService\Common_XH.cs" />
+    <Compile Include="SdkService\CashCodeMoney_XH.cs" />
+    <Compile Include="SdkService\PrintManage_XH.cs" />
+    <Compile Include="SdkService\SendCardNew_XH.cs" />
+    <Compile Include="SdkService\SendCard_Ph.cs" />
+    <Compile Include="SdkService\SendCard_XH.cs" />
+    <Compile Include="SDK\XuHuiInterface_DLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="POSInterface\POS001\doc\gmc\cardbank.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\emvdebug.log" />
+    <None Include="POSInterface\POS001\doc\gmc\GMCTTBankInterface.log" />
+    <None Include="POSInterface\POS001\doc\gmc\key.Ini" />
+    <None Include="POSInterface\POS001\doc\gmc\oper.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\PACK_TYPE.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\pinver.log" />
+    <None Include="POSInterface\POS001\doc\gmc\Pos.Ini" />
+    <None Include="POSInterface\POS001\doc\gmc\PosHotKey.Ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\cardbank.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\GMCTTBankInterface.log" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\key.Ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\oper.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\PACK_TYPE.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\PACK_TYPE.ini.bak" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\pinver.log" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\Pos.Ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\Pos.Ini.bak" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\PosHotKey.Ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\print\WinIo.sys" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\print\WinIo.vxd" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\change_duty.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receipt.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receipt2.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receiptcs.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receiptcz.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receiptdk.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receipthk.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receiptml.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receipttx.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receiptyx.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receiptzd.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receipt_emv.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\receiptfmt\receipt_settle.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\Rsp.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\termflag" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\testtmp.dat" />
+    <None Include="POSInterface\POS001\doc\gmc\ppcard\umsgmc.log" />
+    <None Include="POSInterface\POS001\doc\gmc\print\WinIo.sys" />
+    <None Include="POSInterface\POS001\doc\gmc\print\WinIo.vxd" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\change_duty.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receipt.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receipt2.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receiptcs.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receiptcz.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receiptdk.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receipthk.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receiptml.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receipttx.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receiptyx.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receiptzd.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receipt_emv.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\receiptfmt\receipt_settle.fmt" />
+    <None Include="POSInterface\POS001\doc\gmc\RegOcx.bat" />
+    <None Include="POSInterface\POS001\doc\gmc\Rsp.ini" />
+    <None Include="POSInterface\POS001\doc\gmc\termflag" />
+    <None Include="POSInterface\POS001\doc\gmc\testtmp.dat" />
+    <None Include="POSInterface\POS001\doc\gmc\tradelog" />
+    <None Include="POSInterface\POS001\doc\gmc\umsgmc.log" />
+    <None Include="POSInterface\POS001\doc\gmc\URegOcx.bat" />
+    <None Include="POSInterface\POS001\doc\银行卡标准接口文档%28V2.0.0%29 %281%29.doc" />
+    <None Include="POSInterface\POS002\BJJLXY_POS\ecr\bankini.ini" />
+    <None Include="POSInterface\POS002\BJJLXY_POS\ecr\ECR.DAT" />
+    <None Include="POSInterface\POS002\doc\ecr\bankini.ini" />
+    <None Include="POSInterface\POS002\doc\ecr\ECR.DAT" />
+    <None Include="POSInterface\POS002\doc\数据格式-西北妇幼--20160527.doc" />
+    <None Include="POSInterface\POS002\doc\数据格式-西北妇幼.doc" />
+    <None Include="旭辉接口文档\GGXmlTcp.lib" />
+    <None Include="旭辉接口文档\HLST_Card2\cardapi2.lib" />
+    <None Include="旭辉接口文档\HLST_Card2\CardII.ini" />
+    <None Include="旭辉接口文档\HLST_Card2\license.dat" />
+    <None Include="旭辉接口文档\HLST_Card2\WltRS.dll22" />
+    <None Include="旭辉接口文档\PrintPage" />
+    <None Include="旭辉接口文档\ReadCard\A6_30\A6SAPI.lib" />
+    <None Include="旭辉接口文档\reg.bat" />
+    <None Include="旭辉接口文档\unreg.bat" />
+    <None Include="旭辉接口文档\自助机硬件封装技术方案.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="POSInterface\POS001\doc\gmc\bankpos.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\CallOcx.htm" />
+    <Content Include="POSInterface\POS001\doc\gmc\gmc.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\HotKey.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\MisPosCfg.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\posinf.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\postrans.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\bankpos.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\gmc.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\MisPosCfg.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\posinf.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\postrans.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\ppcard.ocx" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\ppcard1.ocx" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\print\tcprint.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\print\WinIo.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\Project1-无界面.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\Project1.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\Project1有界面.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\ppcard\receipt.txt" />
+    <Content Include="POSInterface\POS001\doc\gmc\print\tcprint.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\print\WinIo.dll" />
+    <Content Include="POSInterface\POS001\doc\gmc\Project1.exe" />
+    <Content Include="POSInterface\POS001\doc\gmc\umsocx.ocx" />
+    <Content Include="POSInterface\POS001\doc\gmc\文件传递.exe" />
+    <Content Include="POSInterface\POS002\BJJLXY_POS\ecrcomm.dll" />
+    <Content Include="POSInterface\POS002\doc\ecrcomm.dll" />
+    <EmbeddedResource Include="POSInterface\POS003\Dialogs\FrmReadCard.resx">
+      <DependentUpon>FrmReadCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\chaka5.gif" />
+    <EmbeddedResource Include="Resources\密码.png" />
+    <EmbeddedResource Include="Resources\密码框.png" />
+    <EmbeddedResource Include="Resources\失败.png" />
+    <EmbeddedResource Include="Resources\银行卡入口图.png" />
+    <EmbeddedResource Include="Resources\圆角矩形-13.png" />
+    <EmbeddedResource Include="Resources\圆角矩形-13-2.png" />
+    <Content Include="旭辉接口文档\20160630\HardwareCom.dll" />
+    <Content Include="旭辉接口文档\20160630\MPOST.dll" />
+    <Content Include="旭辉接口文档\AForge.Video.DirectShow.dll" />
+    <Content Include="旭辉接口文档\AForge.Video.dll" />
+    <Content Include="旭辉接口文档\CardSender\EVOLIS\Evolis.dll" />
+    <Content Include="旭辉接口文档\CardSender\EVOLIS\iomem.dll" />
+    <Content Include="旭辉接口文档\DoorLight\HongJiaLi\MC100.dll" />
+    <Content Include="旭辉接口文档\GGXmlTcp.dll" />
+    <Content Include="旭辉接口文档\HardwareCom.dll" />
+    <Content Include="旭辉接口文档\HLST_Card2\cardapi.h" />
+    <Content Include="旭辉接口文档\HLST_Card2\cardapi2.dll" />
+    <Content Include="旭辉接口文档\HLST_Card2\sdtapi.dll" />
+    <Content Include="旭辉接口文档\HLST_Card2\WltRS.dll" />
+    <Content Include="旭辉接口文档\MPOST.dll" />
+    <Content Include="旭辉接口文档\ReadCard\A6_30\A6SAPI.dll" />
+    <Content Include="旭辉接口文档\ReadCard\A6_30\A6SAPI.h" />
+    <Content Include="旭辉接口文档\ReadCard\ACT-A6\A6CRTAPI.dll" />
+    <Content Include="旭辉接口文档\ReadCard\CRT_310\CRT_310.dll" />
+    <Content Include="旭辉接口文档\SysConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="POSInterface\POS001\doc\gmc\ppcard\print\bank\" />
+    <Folder Include="POSInterface\POS001\doc\gmc\print\bank\" />
+    <Folder Include="POSInterface\POS003\doc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="POSInterface\POS003\Dialogs\FrmPasswordBox.resx">
+      <DependentUpon>FrmPasswordBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

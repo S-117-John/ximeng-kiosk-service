@@ -1,0 +1,119 @@
+<html>
+	<script>
+		function confirm1()
+		{		
+			DUmsocx1.bankrequest="123456789011111123456789022222C" + document.getElementById("field1").value + "000000YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+		function confirm2()
+		{
+			DUmsocx1.bankrequest="123456789011111123456789022222D" + document.getElementById("field1").value + "000000YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);		
+		}
+		function confirm3()
+		{
+			DUmsocx1.bankrequest="123456789011111123456789022222E" + document.getElementById("field1").value + "000000YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);		
+		}
+		function confirm4()
+		{		
+			DUmsocx1.bankrequest="876543211234567800" + document.getElementById("field2").value + 
+				document.getElementById("field4").value + document.getElementById("field5").value +
+				document.getElementById("field3").value + "YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+		function confirm5()
+		{		
+			DUmsocx1.bankrequest="876543211234567801" + document.getElementById("field2").value + 
+				document.getElementById("field4").value + document.getElementById("field5").value +
+				document.getElementById("field3").value + "YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+		function confirm6()
+		{		
+			DUmsocx1.bankrequest="876543211234567802" + document.getElementById("field2").value + 
+				document.getElementById("field4").value + document.getElementById("field5").value +
+				document.getElementById("field3").value + "YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+		function confirm7()
+		{		
+			DUmsocx1.bankrequest="876543211234567803" + document.getElementById("field2").value + 
+				document.getElementById("field4").value + document.getElementById("field5").value +
+				document.getElementById("field3").value + "YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+		function confirm8()
+		{		
+			DUmsocx1.bankrequest="876543211234567804" + document.getElementById("field2").value + 
+				document.getElementById("field4").value + document.getElementById("field5").value +
+				document.getElementById("field3").value + "YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+		function confirm9()
+		{		
+			DUmsocx1.bankrequest="876543211234567805" + document.getElementById("field2").value + 
+				document.getElementById("field4").value + document.getElementById("field5").value +
+				document.getElementById("field3").value + "YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+		function confirm10()
+		{		
+			DUmsocx1.bankrequest="876543211234567806" + document.getElementById("field2").value + 
+				document.getElementById("field4").value + document.getElementById("field5").value +
+				document.getElementById("field3").value + "YOU";
+			DUmsocx1.trans ();
+			alert(DUmsocx1.BankResponse);			
+		}
+	</script>
+		
+	<body>
+		<form>
+			<p>－－－－调用gmc.exe测试(pos.ini中ocxbank=0)－－－－－－－－－－－－－－－－－－－－－－－ </p>
+			<p></p>金额<input type="text" name="field1" size=12 maxlength=12 value="000000000001" id="field1"/>
+			<p id="result1"></p>
+			<input type="button" name="confirmBtn" value="消费测试" onclick="javascript:confirm1()">
+			<id="result2">
+			<input type="button" name="confirmBtn" value="撤销测试" onclick="javascript:confirm2()">
+			<id="result3">
+			<input type="button" name="confirmBtn" value="其他测试" onclick="javascript:confirm3()">
+
+			<p>－－－－调用posinf测试(ocxbank=1调用bankall,ocxbank=2调用bank)－－－－－－－－－－－－－ </p>
+			<p></p>金额<input type="text" name="field2" size=12 maxlength=12 value="000000000001" id="field2"/>
+			；  原凭证号<input type="text" name="field3" size=6 maxlength=6 value="000000" id="field3"/>
+			；  原交易日期<input type="text" name="field4" size=8 maxlength=8 value="20110000" id="field4"/>
+			；  原交易参考号<input type="text" name="field5" size=12 maxlength=12 value="000000000000" id="field5"/>
+			<p id="result4"></p>
+			<input type="button" name="confirmBtn" value="消费" onclick="javascript:confirm4()">
+			<id="result5">
+			<input type="button" name="confirmBtn" value="撤销" onclick="javascript:confirm5()">
+			<id="result6">
+			<input type="button" name="confirmBtn" value="退货" onclick="javascript:confirm6()">
+			<id="result7">
+			<input type="button" name="confirmBtn" value="查余" onclick="javascript:confirm7()">
+			<id="result8">
+			<input type="button" name="confirmBtn" value="重打印" onclick="javascript:confirm8()">
+			<id="result9">
+			<input type="button" name="confirmBtn" value="签到" onclick="javascript:confirm9()">
+			<id="result10">
+			<input type="button" name="confirmBtn" value="结算" onclick="javascript:confirm10()">
+			<p>－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ </p>
+		</form></p>
+		
+		<OBJECT id=DUmsocx1 classid=clsid:E083E848-B477-4F16-BCD5-72D74BC1E2AF>
+		<PARAM NAME="_ExtentX" VALUE="7000">
+		<PARAM NAME="_ExtentY" VALUE="4000">
+		</OBJECT>		
+		<font color=blue>运行之前请先注册控件!</font><br>
+		银联商务有限公司技术开发中心
+	</body>
+</html>

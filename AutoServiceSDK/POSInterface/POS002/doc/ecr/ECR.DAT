@@ -1,0 +1,18 @@
+4
+60
+9600
+8N1
+3
+1
+
+
+
+Setting Discript.......
+1. COM1=1 , COM2=2    											(Defualt=1)
+2. Transacation Timeout 										(Default=65)
+3. Baud Rate = 38400,  19200,  9600,  4800,  2400,  1200,  300 	(Default=9600)
+4. Parity[0] = 7 , 8 (databits)									(Default=7E1)
+   Parity[1] = E , O , N , S (Parity Odd='E' Even='E' None='N')
+   Parity[2] = 1 , 2 (Stop Bits)
+5. Retry Times 													(Default=3)
+6. None Log=0 , Write Log=1 									(Default=1)

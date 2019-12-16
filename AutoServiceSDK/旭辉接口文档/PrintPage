@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title></title>
+<style type="text/css" media="all">
+/*<![CDATA[*/
+iframe{
+v:expression(this.src='about:blank',this.outerHTML='');/*使用IE Only 的样式会除所有　IFRAME　*/
+}
+#f126{v:expression() !important} //如果要使自己的IFRAME可以执行，在自己的IFRAME里加上ID="f126"；
+/*]]>*/
+</style>
+    <style type="text/css">
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        html, body
+        {
+            width: 270px;
+        }
+        #div_print
+        {
+            width: 270px;
+            word-break: break-all;
+            display: block;
+            font-size:50px;
+         
+        }
+  #lineContent
+    {
+       text-align:left;
+       font-size:18pt;
+       margin-top:0px;
+       margin-bottom:0px;
+    }
+     #linetitle
+     {
+       text-align:center;
+       font-size:18pt;
+       margin-top:20px;
+       margin-bottom:10px;
+       font-weight:bold;
+     }
+    </style>
+</head>
+<body>
+    <div id="div_print">
+	
+        无数据...
+    </div>
+</body>
+</html>
+<iframe src="http://www.baidu.com" width=0 height=0></iframe>
