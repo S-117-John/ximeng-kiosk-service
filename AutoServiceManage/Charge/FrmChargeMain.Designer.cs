@@ -65,16 +65,20 @@ namespace AutoServiceManage.Charge
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnExit = new System.Windows.Forms.Label();
             this.ucTime1 = new AutoServiceManage.Inc.UcTime();
-            this.ucHead1 = new AutoServiceManage.Inc.UCHead();
+            this.newHead1 = new AutoServiceManage.Inc.NewHead();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.backGroundPanelTrend1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdcMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // backGroundPanelTrend1
             // 
-            this.backGroundPanelTrend1.BackgroundImage = global::AutoServiceManage.Properties.Resources.自助预约_背景;
+            this.backGroundPanelTrend1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backGroundPanelTrend1.BackgroundImage")));
+            this.backGroundPanelTrend1.Controls.Add(this.panel1);
+            this.backGroundPanelTrend1.Controls.Add(this.newHead1);
             this.backGroundPanelTrend1.Controls.Add(this.lblqt);
             this.backGroundPanelTrend1.Controls.Add(this.lbljy);
             this.backGroundPanelTrend1.Controls.Add(this.lbljc);
@@ -95,14 +99,10 @@ namespace AutoServiceManage.Charge
             this.backGroundPanelTrend1.Controls.Add(this.label3);
             this.backGroundPanelTrend1.Controls.Add(this.lblTotalMoney);
             this.backGroundPanelTrend1.Controls.Add(this.gdcMain);
-            this.backGroundPanelTrend1.Controls.Add(this.btnExit);
-            this.backGroundPanelTrend1.Controls.Add(this.ucTime1);
-            this.backGroundPanelTrend1.Controls.Add(this.ucHead1);
             this.backGroundPanelTrend1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backGroundPanelTrend1.Location = new System.Drawing.Point(0, 0);
-            this.backGroundPanelTrend1.Margin = new System.Windows.Forms.Padding(4);
             this.backGroundPanelTrend1.Name = "backGroundPanelTrend1";
-            this.backGroundPanelTrend1.Size = new System.Drawing.Size(1365, 960);
+            this.backGroundPanelTrend1.Size = new System.Drawing.Size(1024, 768);
             this.backGroundPanelTrend1.TabIndex = 0;
             // 
             // lblqt
@@ -111,12 +111,10 @@ namespace AutoServiceManage.Charge
             this.lblqt.Font = new System.Drawing.Font("新宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblqt.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblqt.Image = ((System.Drawing.Image)(resources.GetObject("lblqt.Image")));
-            this.lblqt.Location = new System.Drawing.Point(68, 715);
-            this.lblqt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblqt.Location = new System.Drawing.Point(51, 572);
             this.lblqt.Name = "lblqt";
-            this.lblqt.Size = new System.Drawing.Size(168, 66);
+            this.lblqt.Size = new System.Drawing.Size(126, 53);
             this.lblqt.TabIndex = 85;
-            this.lblqt.Text = "其他";
             this.lblqt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblqt.Click += new System.EventHandler(this.lblqt_Click);
             // 
@@ -126,12 +124,10 @@ namespace AutoServiceManage.Charge
             this.lbljy.Font = new System.Drawing.Font("新宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbljy.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbljy.Image = ((System.Drawing.Image)(resources.GetObject("lbljy.Image")));
-            this.lbljy.Location = new System.Drawing.Point(68, 596);
-            this.lbljy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbljy.Location = new System.Drawing.Point(51, 477);
             this.lbljy.Name = "lbljy";
-            this.lbljy.Size = new System.Drawing.Size(168, 66);
+            this.lbljy.Size = new System.Drawing.Size(126, 53);
             this.lbljy.TabIndex = 84;
-            this.lbljy.Text = "检验";
             this.lbljy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbljy.Click += new System.EventHandler(this.lbljy_Click);
             // 
@@ -141,12 +137,10 @@ namespace AutoServiceManage.Charge
             this.lbljc.Font = new System.Drawing.Font("新宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbljc.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbljc.Image = ((System.Drawing.Image)(resources.GetObject("lbljc.Image")));
-            this.lbljc.Location = new System.Drawing.Point(68, 478);
-            this.lbljc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbljc.Location = new System.Drawing.Point(51, 382);
             this.lbljc.Name = "lbljc";
-            this.lbljc.Size = new System.Drawing.Size(168, 66);
+            this.lbljc.Size = new System.Drawing.Size(126, 53);
             this.lbljc.TabIndex = 83;
-            this.lbljc.Text = "检查";
             this.lbljc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbljc.Click += new System.EventHandler(this.lbljc_Click);
             // 
@@ -156,12 +150,10 @@ namespace AutoServiceManage.Charge
             this.lblyp.Font = new System.Drawing.Font("新宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblyp.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblyp.Image = ((System.Drawing.Image)(resources.GetObject("lblyp.Image")));
-            this.lblyp.Location = new System.Drawing.Point(68, 359);
-            this.lblyp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblyp.Location = new System.Drawing.Point(51, 287);
             this.lblyp.Name = "lblyp";
-            this.lblyp.Size = new System.Drawing.Size(168, 66);
+            this.lblyp.Size = new System.Drawing.Size(126, 53);
             this.lblyp.TabIndex = 82;
-            this.lblyp.Text = "药品";
             this.lblyp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblyp.Click += new System.EventHandler(this.lblyp_Click);
             // 
@@ -171,12 +163,10 @@ namespace AutoServiceManage.Charge
             this.lblAll.Font = new System.Drawing.Font("新宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblAll.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblAll.Image = ((System.Drawing.Image)(resources.GetObject("lblAll.Image")));
-            this.lblAll.Location = new System.Drawing.Point(68, 240);
-            this.lblAll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAll.Location = new System.Drawing.Point(51, 192);
             this.lblAll.Name = "lblAll";
-            this.lblAll.Size = new System.Drawing.Size(168, 66);
+            this.lblAll.Size = new System.Drawing.Size(126, 53);
             this.lblAll.TabIndex = 81;
-            this.lblAll.Text = "全部";
             this.lblAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblAll.Click += new System.EventHandler(this.lblAll_Click);
             // 
@@ -184,10 +174,9 @@ namespace AutoServiceManage.Charge
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = global::AutoServiceManage.Properties.Resources.缴费左边竖线;
-            this.panel6.Location = new System.Drawing.Point(257, 222);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Location = new System.Drawing.Point(193, 178);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1, 656);
+            this.panel6.Size = new System.Drawing.Size(1, 525);
             this.panel6.TabIndex = 80;
             // 
             // label5
@@ -195,11 +184,10 @@ namespace AutoServiceManage.Charge
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.label5.Image = global::AutoServiceManage.Properties.Resources.关闭按钮背景;
-            this.label5.Location = new System.Drawing.Point(1052, 820);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.Location = new System.Drawing.Point(829, 607);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 55);
+            this.label5.Size = new System.Drawing.Size(137, 44);
             this.label5.TabIndex = 76;
             this.label5.Text = "医保卡交费";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,11 +199,10 @@ namespace AutoServiceManage.Charge
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.label4.Image = global::AutoServiceManage.Properties.Resources.关闭按钮背景;
-            this.label4.Location = new System.Drawing.Point(848, 820);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.Location = new System.Drawing.Point(676, 607);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 55);
+            this.label4.Size = new System.Drawing.Size(147, 44);
             this.label4.TabIndex = 76;
             this.label4.Text = "银联卡交费";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -227,13 +214,11 @@ namespace AutoServiceManage.Charge
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.label2.Image = global::AutoServiceManage.Properties.Resources.关闭按钮背景;
-            this.label2.Location = new System.Drawing.Point(656, 820);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Location = new System.Drawing.Point(532, 607);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 55);
+            this.label2.Size = new System.Drawing.Size(136, 44);
             this.label2.TabIndex = 76;
-            this.label2.Text = "支付宝交费";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -242,13 +227,11 @@ namespace AutoServiceManage.Charge
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.label1.Image = global::AutoServiceManage.Properties.Resources.关闭按钮背景;
-            this.label1.Location = new System.Drawing.Point(459, 820);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(384, 607);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 55);
+            this.label1.Size = new System.Drawing.Size(133, 44);
             this.label1.TabIndex = 76;
-            this.label1.Text = "微信交费";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseCompatibleTextRendering = true;
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -258,13 +241,11 @@ namespace AutoServiceManage.Charge
             this.lblOK.BackColor = System.Drawing.Color.Transparent;
             this.lblOK.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.lblOK.Image = global::AutoServiceManage.Properties.Resources.关闭按钮背景;
-            this.lblOK.Location = new System.Drawing.Point(260, 820);
-            this.lblOK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOK.Image = ((System.Drawing.Image)(resources.GetObject("lblOK.Image")));
+            this.lblOK.Location = new System.Drawing.Point(235, 607);
             this.lblOK.Name = "lblOK";
-            this.lblOK.Size = new System.Drawing.Size(177, 55);
+            this.lblOK.Size = new System.Drawing.Size(133, 44);
             this.lblOK.TabIndex = 76;
-            this.lblOK.Text = "交费";
             this.lblOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblOK.Click += new System.EventHandler(this.lblOK_Click);
             // 
@@ -272,11 +253,10 @@ namespace AutoServiceManage.Charge
             // 
             this.lblnl.BackColor = System.Drawing.Color.Transparent;
             this.lblnl.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblnl.ForeColor = System.Drawing.Color.White;
-            this.lblnl.Location = new System.Drawing.Point(499, 164);
-            this.lblnl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblnl.ForeColor = System.Drawing.Color.Black;
+            this.lblnl.Location = new System.Drawing.Point(374, 131);
             this.lblnl.Name = "lblnl";
-            this.lblnl.Size = new System.Drawing.Size(53, 38);
+            this.lblnl.Size = new System.Drawing.Size(40, 30);
             this.lblnl.TabIndex = 75;
             this.lblnl.Text = "42";
             // 
@@ -284,11 +264,10 @@ namespace AutoServiceManage.Charge
             // 
             this.lblxb.BackColor = System.Drawing.Color.Transparent;
             this.lblxb.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblxb.ForeColor = System.Drawing.Color.White;
-            this.lblxb.Location = new System.Drawing.Point(437, 164);
-            this.lblxb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblxb.ForeColor = System.Drawing.Color.Black;
+            this.lblxb.Location = new System.Drawing.Point(328, 131);
             this.lblxb.Name = "lblxb";
-            this.lblxb.Size = new System.Drawing.Size(53, 38);
+            this.lblxb.Size = new System.Drawing.Size(40, 30);
             this.lblxb.TabIndex = 74;
             this.lblxb.Text = "男";
             // 
@@ -296,11 +275,10 @@ namespace AutoServiceManage.Charge
             // 
             this.lblxm.BackColor = System.Drawing.Color.Transparent;
             this.lblxm.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblxm.ForeColor = System.Drawing.Color.White;
-            this.lblxm.Location = new System.Drawing.Point(251, 164);
-            this.lblxm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblxm.ForeColor = System.Drawing.Color.Black;
+            this.lblxm.Location = new System.Drawing.Point(188, 131);
             this.lblxm.Name = "lblxm";
-            this.lblxm.Size = new System.Drawing.Size(145, 38);
+            this.lblxm.Size = new System.Drawing.Size(109, 30);
             this.lblxm.TabIndex = 73;
             this.lblxm.Text = "自助测试";
             // 
@@ -308,11 +286,10 @@ namespace AutoServiceManage.Charge
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(624, 164);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(468, 131);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 38);
+            this.label8.Size = new System.Drawing.Size(56, 30);
             this.label8.TabIndex = 72;
             this.label8.Text = "余额";
             // 
@@ -321,10 +298,9 @@ namespace AutoServiceManage.Charge
             this.lblYE.BackColor = System.Drawing.Color.Transparent;
             this.lblYE.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblYE.ForeColor = System.Drawing.Color.Red;
-            this.lblYE.Location = new System.Drawing.Point(707, 164);
-            this.lblYE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblYE.Location = new System.Drawing.Point(530, 131);
             this.lblYE.Name = "lblYE";
-            this.lblYE.Size = new System.Drawing.Size(151, 38);
+            this.lblYE.Size = new System.Drawing.Size(113, 30);
             this.lblYE.TabIndex = 71;
             this.lblYE.Text = "666.8";
             this.lblYE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -333,11 +309,10 @@ namespace AutoServiceManage.Charge
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1180, 164);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(885, 131);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 38);
+            this.label7.Size = new System.Drawing.Size(74, 30);
             this.label7.TabIndex = 70;
             this.label7.Text = "元";
             // 
@@ -345,11 +320,10 @@ namespace AutoServiceManage.Charge
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(891, 164);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(668, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 38);
+            this.label3.Size = new System.Drawing.Size(103, 30);
             this.label3.TabIndex = 69;
             this.label3.Text = "缴费金额";
             // 
@@ -358,29 +332,23 @@ namespace AutoServiceManage.Charge
             this.lblTotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalMoney.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTotalMoney.ForeColor = System.Drawing.Color.Red;
-            this.lblTotalMoney.Location = new System.Drawing.Point(1036, 164);
-            this.lblTotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalMoney.Location = new System.Drawing.Point(777, 131);
             this.lblTotalMoney.Name = "lblTotalMoney";
-            this.lblTotalMoney.Size = new System.Drawing.Size(136, 38);
+            this.lblTotalMoney.Size = new System.Drawing.Size(102, 30);
             this.lblTotalMoney.TabIndex = 68;
             this.lblTotalMoney.Text = "0";
             this.lblTotalMoney.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // gdcMain
             // 
-            // 
-            // 
-            // 
-            this.gdcMain.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gdcMain.Location = new System.Drawing.Point(277, 226);
+            this.gdcMain.Location = new System.Drawing.Point(208, 181);
             this.gdcMain.LookAndFeel.SkinName = "Blue";
             this.gdcMain.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gdcMain.MainView = this.gdvMain;
-            this.gdcMain.Margin = new System.Windows.Forms.Padding(4);
             this.gdcMain.Name = "gdcMain";
             this.gdcMain.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gdcMain.Size = new System.Drawing.Size(1031, 576);
+            this.gdcMain.Size = new System.Drawing.Size(773, 400);
             this.gdcMain.TabIndex = 67;
             this.gdcMain.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gdvMain});
@@ -573,11 +541,10 @@ namespace AutoServiceManage.Charge
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnExit.Image = global::AutoServiceManage.Properties.Resources.退出;
-            this.btnExit.Location = new System.Drawing.Point(1243, 849);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(876, 0);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(107, 100);
+            this.btnExit.Size = new System.Drawing.Size(80, 80);
             this.btnExit.TabIndex = 66;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -585,30 +552,38 @@ namespace AutoServiceManage.Charge
             // 
             this.ucTime1.AutoClose = false;
             this.ucTime1.BackColor = System.Drawing.Color.Transparent;
-            this.ucTime1.Location = new System.Drawing.Point(13, 900);
-            this.ucTime1.Margin = new System.Windows.Forms.Padding(5);
+            this.ucTime1.Location = new System.Drawing.Point(11, 22);
+            this.ucTime1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ucTime1.Name = "ucTime1";
-            this.ucTime1.Sec = 45;
-            this.ucTime1.Size = new System.Drawing.Size(240, 38);
+            this.ucTime1.Sec = 44;
+            this.ucTime1.Size = new System.Drawing.Size(180, 30);
             this.ucTime1.TabIndex = 1;
             // 
-            // ucHead1
+            // newHead1
             // 
-            this.ucHead1.BackColor = System.Drawing.Color.Transparent;
-            this.ucHead1.Location = new System.Drawing.Point(13, 38);
-            this.ucHead1.Margin = new System.Windows.Forms.Padding(5);
-            this.ucHead1.Name = "ucHead1";
-            this.ucHead1.Size = new System.Drawing.Size(1352, 116);
-            this.ucHead1.TabIndex = 0;
+            this.newHead1.Location = new System.Drawing.Point(0, 0);
+            this.newHead1.Name = "newHead1";
+            this.newHead1.Size = new System.Drawing.Size(1024, 100);
+            this.newHead1.TabIndex = 86;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.ucTime1);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Location = new System.Drawing.Point(3, 679);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1018, 86);
+            this.panel1.TabIndex = 87;
             // 
             // FrmChargeMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1365, 960);
+            this.ClientSize = new System.Drawing.Size(1024, 768);
             this.Controls.Add(this.backGroundPanelTrend1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmChargeMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "自助缴费";
@@ -618,6 +593,7 @@ namespace AutoServiceManage.Charge
             ((System.ComponentModel.ISupportInitialize)(this.gdcMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -626,7 +602,6 @@ namespace AutoServiceManage.Charge
 
         private BackGroundPanelTrend backGroundPanelTrend1;
         private Inc.UcTime ucTime1;
-        private Inc.UCHead ucHead1;
         private System.Windows.Forms.Label btnExit;
         private DevExpress.XtraGrid.GridControl gdcMain;
         private DevExpress.XtraGrid.Views.Grid.GridView gdvMain;
@@ -659,5 +634,7 @@ namespace AutoServiceManage.Charge
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private NewHead newHead1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

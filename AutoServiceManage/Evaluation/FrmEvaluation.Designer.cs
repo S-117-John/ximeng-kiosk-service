@@ -39,16 +39,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblPatient = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Label();
             this.ucTime1 = new AutoServiceManage.Inc.UcTime();
-            this.ucHead1 = new AutoServiceManage.Inc.UCHead();
+            this.newHead1 = new AutoServiceManage.Inc.NewHead();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.backGroundPanelTrend1.SuspendLayout();
             this.backGroundPanelTrend2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // backGroundPanelTrend1
@@ -63,7 +63,9 @@
             // 
             // backGroundPanelTrend2
             // 
-            this.backGroundPanelTrend2.BackgroundImage = global::AutoServiceManage.Properties.Resources.自助预约_背景;
+            this.backGroundPanelTrend2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backGroundPanelTrend2.BackgroundImage")));
+            this.backGroundPanelTrend2.Controls.Add(this.panel2);
+            this.backGroundPanelTrend2.Controls.Add(this.newHead1);
             this.backGroundPanelTrend2.Controls.Add(this.lblNext);
             this.backGroundPanelTrend2.Controls.Add(this.lblLast);
             this.backGroundPanelTrend2.Controls.Add(this.panel1);
@@ -71,13 +73,7 @@
             this.backGroundPanelTrend2.Controls.Add(this.label4);
             this.backGroundPanelTrend2.Controls.Add(this.lblPatient);
             this.backGroundPanelTrend2.Controls.Add(this.pictureBox1);
-            this.backGroundPanelTrend2.Controls.Add(this.label3);
-            this.backGroundPanelTrend2.Controls.Add(this.label2);
             this.backGroundPanelTrend2.Controls.Add(this.label1);
-            this.backGroundPanelTrend2.Controls.Add(this.btnExit);
-            this.backGroundPanelTrend2.Controls.Add(this.btnReturn);
-            this.backGroundPanelTrend2.Controls.Add(this.ucTime1);
-            this.backGroundPanelTrend2.Controls.Add(this.ucHead1);
             this.backGroundPanelTrend2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backGroundPanelTrend2.Location = new System.Drawing.Point(0, 0);
             this.backGroundPanelTrend2.Name = "backGroundPanelTrend2";
@@ -123,10 +119,10 @@
             this.lblOK.BackColor = System.Drawing.Color.Transparent;
             this.lblOK.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.lblOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.lblOK.Image = global::AutoServiceManage.Properties.Resources.关闭按钮背景;
+            this.lblOK.Image = ((System.Drawing.Image)(resources.GetObject("lblOK.Image")));
             this.lblOK.Location = new System.Drawing.Point(431, 575);
             this.lblOK.Name = "lblOK";
-            this.lblOK.Size = new System.Drawing.Size(142, 44);
+            this.lblOK.Size = new System.Drawing.Size(142, 55);
             this.lblOK.TabIndex = 90;
             this.lblOK.Text = "提  交";
             this.lblOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,7 +132,7 @@
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(106, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(800, 60);
@@ -148,7 +144,7 @@
             // 
             this.lblPatient.BackColor = System.Drawing.Color.Transparent;
             this.lblPatient.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblPatient.ForeColor = System.Drawing.Color.White;
+            this.lblPatient.ForeColor = System.Drawing.Color.Black;
             this.lblPatient.Location = new System.Drawing.Point(127, 176);
             this.lblPatient.Name = "lblPatient";
             this.lblPatient.Size = new System.Drawing.Size(202, 29);
@@ -167,34 +163,12 @@
             this.pictureBox1.TabIndex = 87;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(382, 670);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(324, 30);
-            this.label3.TabIndex = 86;
-            this.label3.Text = "谢谢合作，祝您身体健康！";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(157, 640);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(717, 30);
-            this.label2.TabIndex = 85;
-            this.label2.Text = "温馨说明：一星：不满意。二星：较不满意。三星：一般满意。四星：较满意。五星：非常满意。";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(33, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 26);
@@ -207,8 +181,8 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnExit.Image = global::AutoServiceManage.Properties.Resources.退出;
-            this.btnExit.Location = new System.Drawing.Point(880, 670);
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(869, 11);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(80, 80);
             this.btnExit.TabIndex = 56;
@@ -220,8 +194,8 @@
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnReturn.Image = global::AutoServiceManage.Properties.Resources.返回;
-            this.btnReturn.Location = new System.Drawing.Point(770, 670);
+            this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
+            this.btnReturn.Location = new System.Drawing.Point(733, 11);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(80, 80);
             this.btnReturn.TabIndex = 55;
@@ -231,19 +205,31 @@
             // 
             this.ucTime1.AutoClose = false;
             this.ucTime1.BackColor = System.Drawing.Color.Transparent;
-            this.ucTime1.Location = new System.Drawing.Point(10, 720);
+            this.ucTime1.Location = new System.Drawing.Point(21, 38);
             this.ucTime1.Name = "ucTime1";
-            this.ucTime1.Sec = 8;
+            this.ucTime1.Sec = 7;
             this.ucTime1.Size = new System.Drawing.Size(180, 30);
             this.ucTime1.TabIndex = 54;
             // 
-            // ucHead1
+            // newHead1
             // 
-            this.ucHead1.BackColor = System.Drawing.Color.Transparent;
-            this.ucHead1.Location = new System.Drawing.Point(10, 30);
-            this.ucHead1.Name = "ucHead1";
-            this.ucHead1.Size = new System.Drawing.Size(1014, 93);
-            this.ucHead1.TabIndex = 53;
+            this.newHead1.Location = new System.Drawing.Point(0, 0);
+            this.newHead1.Name = "newHead1";
+            this.newHead1.Size = new System.Drawing.Size(1024, 100);
+            this.newHead1.TabIndex = 94;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.ucTime1);
+            this.panel2.Controls.Add(this.btnReturn);
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Location = new System.Drawing.Point(3, 668);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1021, 100);
+            this.panel2.TabIndex = 95;
             // 
             // FrmEvaluation
             // 
@@ -260,6 +246,7 @@
             this.backGroundPanelTrend2.ResumeLayout(false);
             this.backGroundPanelTrend2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -272,9 +259,6 @@
         private System.Windows.Forms.Label btnExit;
         private System.Windows.Forms.Label btnReturn;
         private Inc.UcTime ucTime1;
-        private Inc.UCHead ucHead1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblPatient;
         private System.Windows.Forms.Label label4;
@@ -282,5 +266,7 @@
         private System.Windows.Forms.Label lblLast;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblOK;
+        private Inc.NewHead newHead1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

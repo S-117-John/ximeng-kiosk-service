@@ -38,7 +38,7 @@
             // 
             this.lblWaitTime.BackColor = System.Drawing.Color.Transparent;
             this.lblWaitTime.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold);
-            this.lblWaitTime.ForeColor = System.Drawing.Color.White;
+            this.lblWaitTime.ForeColor = System.Drawing.Color.Black;
             this.lblWaitTime.Location = new System.Drawing.Point(126, 6);
             this.lblWaitTime.Name = "lblWaitTime";
             this.lblWaitTime.Size = new System.Drawing.Size(33, 20);
@@ -49,7 +49,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(17, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 20);

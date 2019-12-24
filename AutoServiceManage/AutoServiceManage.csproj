@@ -467,6 +467,12 @@
     <Compile Include="Inc\LevelTwoOfficeList.Designer.cs">
       <DependentUpon>LevelTwoOfficeList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inc\NewHead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inc\NewHead.Designer.cs">
+      <DependentUpon>NewHead.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inc\UcStarScore.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -934,6 +940,9 @@
     <EmbeddedResource Include="Inc\LevelTwoOfficeList.resx">
       <DependentUpon>LevelTwoOfficeList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inc\NewHead.resx">
+      <DependentUpon>NewHead.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inc\UcStarScore.resx">
       <DependentUpon>UcStarScore.cs</DependentUpon>
     </EmbeddedResource>
@@ -1094,6 +1103,41 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\793.png" />
+    <Content Include="Images\794.png" />
+    <Content Include="Images\all.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\fanhui.png" />
+    <Content Include="Images\foot.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\tuichu.png" />
+    <Content Include="Images\up.png" />
+    <Content Include="Images\矩形 41.png" />
+    <Content Include="Images\组 690.png" />
+    <Content Include="Images\组 774.png" />
+    <Content Include="Images\组 775.png" />
+    <Content Include="Images\组 776.png" />
+    <Content Include="Images\组 777.png" />
+    <Content Include="Images\组 778.png" />
+    <Content Include="Images\组 779.png" />
+    <Content Include="Images\组 780.png" />
+    <Content Include="Images\组 781.png" />
+    <Content Include="Images\组 782.png" />
+    <Content Include="Images\组 783.png" />
+    <Content Include="Images\组 784.png" />
+    <Content Include="Images\组 785.png" />
+    <Content Include="Images\组 790.png" />
+    <Content Include="Images\组 791.png" />
+    <Content Include="Images\组 792.png" />
+    <Content Include="Images\组 7991 %282%29.png" />
+    <Content Include="Images\组 8001.png" />
+    <Content Include="Images\组 801.png" />
+    <Content Include="Images\组 802.png" />
+    <Content Include="Images\组 803.png" />
+    <Content Include="Images\组 804.png" />
+    <Content Include="Images\组 805.png" />
+    <Content Include="Images\组 809.png" />
+    <Content Include="Images\组 810.png" />
     <Content Include="Image\CT预约.png" />
     <Content Include="Image\qrcode.jpg" />
     <Content Include="Image\scan.jpg" />

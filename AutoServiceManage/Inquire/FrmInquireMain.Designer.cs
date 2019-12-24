@@ -35,7 +35,9 @@
             this.btnExit = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ucTime1 = new AutoServiceManage.Inc.UcTime();
-            this.ucHead1 = new AutoServiceManage.Inc.UCHead();
+            this.newHead1 = new AutoServiceManage.Inc.NewHead();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblStoredInquire
@@ -45,11 +47,10 @@
             this.lblStoredInquire.Font = new System.Drawing.Font("黑体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblStoredInquire.ForeColor = System.Drawing.Color.Transparent;
             this.lblStoredInquire.Image = ((System.Drawing.Image)(resources.GetObject("lblStoredInquire.Image")));
-            this.lblStoredInquire.Location = new System.Drawing.Point(174, 319);
+            this.lblStoredInquire.Location = new System.Drawing.Point(158, 293);
             this.lblStoredInquire.Name = "lblStoredInquire";
-            this.lblStoredInquire.Size = new System.Drawing.Size(274, 131);
+            this.lblStoredInquire.Size = new System.Drawing.Size(347, 210);
             this.lblStoredInquire.TabIndex = 22;
-            this.lblStoredInquire.Text = "预存查询";
             this.lblStoredInquire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblStoredInquire.Click += new System.EventHandler(this.lblStoredInquire_Click);
             // 
@@ -60,11 +61,10 @@
             this.lblChargeDetailInquire.Font = new System.Drawing.Font("黑体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblChargeDetailInquire.ForeColor = System.Drawing.Color.Transparent;
             this.lblChargeDetailInquire.Image = ((System.Drawing.Image)(resources.GetObject("lblChargeDetailInquire.Image")));
-            this.lblChargeDetailInquire.Location = new System.Drawing.Point(576, 319);
+            this.lblChargeDetailInquire.Location = new System.Drawing.Point(565, 293);
             this.lblChargeDetailInquire.Name = "lblChargeDetailInquire";
-            this.lblChargeDetailInquire.Size = new System.Drawing.Size(274, 131);
+            this.lblChargeDetailInquire.Size = new System.Drawing.Size(362, 210);
             this.lblChargeDetailInquire.TabIndex = 23;
-            this.lblChargeDetailInquire.Text = "收费明细查询";
             this.lblChargeDetailInquire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblChargeDetailInquire.Click += new System.EventHandler(this.lblChargeDetailInquire_Click);
             // 
@@ -74,8 +74,8 @@
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnReturn.Image = global::AutoServiceManage.Properties.Resources.返回;
-            this.btnReturn.Location = new System.Drawing.Point(770, 670);
+            this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
+            this.btnReturn.Location = new System.Drawing.Point(710, 9);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(80, 80);
             this.btnReturn.TabIndex = 24;
@@ -87,8 +87,8 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnExit.Image = global::AutoServiceManage.Properties.Resources.退出;
-            this.btnExit.Location = new System.Drawing.Point(880, 670);
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(846, 9);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(80, 80);
             this.btnExit.TabIndex = 25;
@@ -99,7 +99,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(40, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 24);
@@ -110,51 +110,60 @@
             // 
             this.ucTime1.AutoClose = false;
             this.ucTime1.BackColor = System.Drawing.Color.Transparent;
-            this.ucTime1.Location = new System.Drawing.Point(10, 720);
+            this.ucTime1.Location = new System.Drawing.Point(43, 33);
             this.ucTime1.Name = "ucTime1";
-            this.ucTime1.Sec = 53;
+            this.ucTime1.Sec = 52;
             this.ucTime1.Size = new System.Drawing.Size(180, 30);
             this.ucTime1.TabIndex = 2;
             // 
-            // ucHead1
+            // newHead1
             // 
-            this.ucHead1.BackColor = System.Drawing.Color.Transparent;
-            this.ucHead1.Location = new System.Drawing.Point(10, 30);
-            this.ucHead1.Name = "ucHead1";
-            this.ucHead1.Size = new System.Drawing.Size(1014, 93);
-            this.ucHead1.TabIndex = 1;
+            this.newHead1.Location = new System.Drawing.Point(1, 0);
+            this.newHead1.Name = "newHead1";
+            this.newHead1.Size = new System.Drawing.Size(1024, 100);
+            this.newHead1.TabIndex = 52;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.ucTime1);
+            this.panel1.Controls.Add(this.btnReturn);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Location = new System.Drawing.Point(1, 670);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1024, 95);
+            this.panel1.TabIndex = 53;
             // 
             // FrmInquireMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AutoServiceManage.Properties.Resources.自助预约_背景;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1024, 768);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.newHead1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblStoredInquire);
             this.Controls.Add(this.lblChargeDetailInquire);
-            this.Controls.Add(this.ucTime1);
-            this.Controls.Add(this.ucHead1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInquireMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmInquireMain";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmInquireMain_FormClosing);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Inc.UCHead ucHead1;
         private Inc.UcTime ucTime1;
         private System.Windows.Forms.Label lblStoredInquire;
         private System.Windows.Forms.Label lblChargeDetailInquire;
         private System.Windows.Forms.Label btnReturn;
         private System.Windows.Forms.Label btnExit;
         private System.Windows.Forms.Label label2;
+        private Inc.NewHead newHead1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
