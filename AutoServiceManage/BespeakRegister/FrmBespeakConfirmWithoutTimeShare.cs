@@ -79,6 +79,8 @@ namespace AutoServiceManage.BespeakRegister
 
                 if (Convert.ToDateTime(BespeakDataset.Tables[0].Rows[0]["BESPEAKDATE"].ToString()).Date == DateTime.Now.Date)
                 {
+                    Skynet.LoggingService.LogService.GlobalInfoMessage("挂号事件：++++++"+ Convert.ToDateTime(BespeakDataset.Tables[0].Rows[0]["BESPEAKDATE"].ToString()).ToShortDateString());
+                    
                     this.lblDate.Text = "挂号时间：" + Convert.ToDateTime(BespeakDataset.Tables[0].Rows[0]["BESPEAKDATE"].ToString()).ToShortDateString();
                     label1.Text = "确认挂号信息";
                    

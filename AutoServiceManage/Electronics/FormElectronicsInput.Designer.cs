@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormElectronicsInput));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backGroundPanelTrend1 = new AutoServiceManage.Inc.BackGroundPanelTrend(this.components);
+            this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl7 = new System.Windows.Forms.Label();
             this.lblclear = new System.Windows.Forms.Label();
@@ -46,7 +47,9 @@
             this.lblDelete = new System.Windows.Forms.Label();
             this.lbl9 = new System.Windows.Forms.Label();
             this.lbl8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.picImage = new System.Windows.Forms.PictureBox();
             this.lbltel = new System.Windows.Forms.Label();
@@ -63,19 +66,19 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbltitle = new System.Windows.Forms.Label();
+            this.lblPatientName = new System.Windows.Forms.Label();
             this.lblErr = new System.Windows.Forms.Label();
             this.ucTime1 = new AutoServiceManage.Inc.UcTime();
             this.btnExit = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblPatientName = new System.Windows.Forms.Label();
+            this.newHead1 = new AutoServiceManage.Inc.NewHead();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.backGroundPanelTrend1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -84,7 +87,9 @@
             // 
             // backGroundPanelTrend1
             // 
-            this.backGroundPanelTrend1.BackgroundImage = global::AutoServiceManage.Properties.Resources.自助预约_背景;
+            this.backGroundPanelTrend1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backGroundPanelTrend1.BackgroundImage")));
+            this.backGroundPanelTrend1.Controls.Add(this.panel3);
+            this.backGroundPanelTrend1.Controls.Add(this.newHead1);
             this.backGroundPanelTrend1.Controls.Add(this.label12);
             this.backGroundPanelTrend1.Controls.Add(this.panel2);
             this.backGroundPanelTrend1.Controls.Add(this.label3);
@@ -93,9 +98,6 @@
             this.backGroundPanelTrend1.Controls.Add(this.panel1);
             this.backGroundPanelTrend1.Controls.Add(this.lblPatientName);
             this.backGroundPanelTrend1.Controls.Add(this.lblErr);
-            this.backGroundPanelTrend1.Controls.Add(this.ucTime1);
-            this.backGroundPanelTrend1.Controls.Add(this.btnExit);
-            this.backGroundPanelTrend1.Controls.Add(this.btnReturn);
             this.backGroundPanelTrend1.Controls.Add(this.label1);
             this.backGroundPanelTrend1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backGroundPanelTrend1.Location = new System.Drawing.Point(0, 0);
@@ -103,6 +105,19 @@
             this.backGroundPanelTrend1.Name = "backGroundPanelTrend1";
             this.backGroundPanelTrend1.Size = new System.Drawing.Size(1365, 960);
             this.backGroundPanelTrend1.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(50, 241);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(404, 26);
+            this.label12.TabIndex = 112;
+            this.label12.Text = "2．请仔细核对身份信息，然后输入电话号码。";
             // 
             // panel2
             // 
@@ -120,7 +135,7 @@
             this.panel2.Controls.Add(this.lblDelete);
             this.panel2.Controls.Add(this.lbl9);
             this.panel2.Controls.Add(this.lbl8);
-            this.panel2.Location = new System.Drawing.Point(744, 419);
+            this.panel2.Location = new System.Drawing.Point(741, 369);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(564, 365);
@@ -131,13 +146,12 @@
             this.lbl7.BackColor = System.Drawing.Color.Transparent;
             this.lbl7.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbl7.ForeColor = System.Drawing.Color.Black;
-            this.lbl7.Image = global::AutoServiceManage.Properties.Resources.圆角矩形_8;
+            this.lbl7.Image = ((System.Drawing.Image)(resources.GetObject("lbl7.Image")));
             this.lbl7.Location = new System.Drawing.Point(17, 24);
             this.lbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(87, 62);
             this.lbl7.TabIndex = 87;
-            this.lbl7.Text = "7";
             this.lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl7.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -146,7 +160,7 @@
             this.lblclear.BackColor = System.Drawing.Color.Transparent;
             this.lblclear.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblclear.ForeColor = System.Drawing.Color.Black;
-            this.lblclear.Image = global::AutoServiceManage.Properties.Resources.清除_拷贝;
+            this.lblclear.Image = ((System.Drawing.Image)(resources.GetObject("lblclear.Image")));
             this.lblclear.Location = new System.Drawing.Point(365, 24);
             this.lblclear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblclear.Name = "lblclear";
@@ -166,7 +180,6 @@
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(97, 70);
             this.lbl1.TabIndex = 93;
-            this.lbl1.Text = "1";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl1.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -181,7 +194,6 @@
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(97, 70);
             this.lbl6.TabIndex = 92;
-            this.lbl6.Text = "6";
             this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl6.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -196,7 +208,6 @@
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(97, 70);
             this.lbl2.TabIndex = 94;
-            this.lbl2.Text = "2";
             this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl2.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -211,7 +222,6 @@
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(97, 70);
             this.lbl5.TabIndex = 91;
-            this.lbl5.Text = "5";
             this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl5.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -226,7 +236,6 @@
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(97, 70);
             this.lbl3.TabIndex = 95;
-            this.lbl3.Text = "3";
             this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl3.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -241,7 +250,6 @@
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(97, 70);
             this.lbl4.TabIndex = 90;
-            this.lbl4.Text = "4";
             this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl4.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -250,7 +258,7 @@
             this.lblOK.BackColor = System.Drawing.Color.Transparent;
             this.lblOK.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblOK.ForeColor = System.Drawing.Color.Black;
-            this.lblOK.Image = global::AutoServiceManage.Properties.Resources.确定_拷贝;
+            this.lblOK.Image = ((System.Drawing.Image)(resources.GetObject("lblOK.Image")));
             this.lblOK.Location = new System.Drawing.Point(365, 182);
             this.lblOK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOK.Name = "lblOK";
@@ -270,7 +278,6 @@
             this.lbl0.Name = "lbl0";
             this.lbl0.Size = new System.Drawing.Size(97, 70);
             this.lbl0.TabIndex = 96;
-            this.lbl0.Text = "0";
             this.lbl0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl0.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -299,7 +306,6 @@
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(97, 70);
             this.lbl9.TabIndex = 89;
-            this.lbl9.Text = "9";
             this.lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl9.Click += new System.EventHandler(this.lbl0_Click);
             // 
@@ -314,9 +320,20 @@
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(97, 70);
             this.lbl8.TabIndex = 88;
-            this.lbl8.Text = "8";
             this.lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl8.Click += new System.EventHandler(this.lbl0_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(50, 305);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1231, 24);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "4．\t请在现场预约、挂号、缴费、取药、查询本人就诊信息时主动出示此二维码。";
             // 
             // label7
             // 
@@ -328,6 +345,19 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(1232, 6);
             this.label7.TabIndex = 115;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(50, 271);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(993, 26);
+            this.label2.TabIndex = 110;
+            this.label2.Text = "3．\t办理完成后请在打印机处拿走您的纸质电子健康卡二维码，也可直接使用微信公众号中的电子健康卡二维码就诊。";
             // 
             // panel1
             // 
@@ -348,7 +378,7 @@
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.lbltitle);
-            this.panel1.Location = new System.Drawing.Point(65, 420);
+            this.panel1.Location = new System.Drawing.Point(55, 369);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(649, 365);
@@ -539,6 +569,19 @@
             this.lbltitle.Text = "手机号码:";
             this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblPatientName
+            // 
+            this.lblPatientName.AutoSize = true;
+            this.lblPatientName.BackColor = System.Drawing.Color.Transparent;
+            this.lblPatientName.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblPatientName.ForeColor = System.Drawing.Color.Black;
+            this.lblPatientName.Location = new System.Drawing.Point(50, 209);
+            this.lblPatientName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPatientName.Name = "lblPatientName";
+            this.lblPatientName.Size = new System.Drawing.Size(594, 26);
+            this.lblPatientName.TabIndex = 109;
+            this.lblPatientName.Text = "1．\t请将二代身份证放在身份证感应区，系统会自助读取身份证信息。";
+            // 
             // lblErr
             // 
             this.lblErr.BackColor = System.Drawing.Color.Transparent;
@@ -556,10 +599,10 @@
             // 
             this.ucTime1.AutoClose = false;
             this.ucTime1.BackColor = System.Drawing.Color.Transparent;
-            this.ucTime1.Location = new System.Drawing.Point(13, 896);
+            this.ucTime1.Location = new System.Drawing.Point(28, 31);
             this.ucTime1.Margin = new System.Windows.Forms.Padding(5);
             this.ucTime1.Name = "ucTime1";
-            this.ucTime1.Sec = 27;
+            this.ucTime1.Sec = 26;
             this.ucTime1.Size = new System.Drawing.Size(240, 38);
             this.ucTime1.TabIndex = 65;
             // 
@@ -569,8 +612,8 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnExit.Image = global::AutoServiceManage.Properties.Resources.退出;
-            this.btnExit.Location = new System.Drawing.Point(1140, 803);
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1172, 0);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(107, 100);
@@ -583,8 +626,8 @@
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnReturn.Image = global::AutoServiceManage.Properties.Resources.返回;
-            this.btnReturn.Location = new System.Drawing.Point(995, 813);
+            this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
+            this.btnReturn.Location = new System.Drawing.Point(1028, 2);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(87, 89);
@@ -597,64 +640,33 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(99, 161);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(74, 139);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(264, 31);
             this.label1.TabIndex = 43;
             this.label1.Text = "自助办卡-请输入手机号";
             // 
-            // label12
+            // newHead1
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(75, 263);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(404, 26);
-            this.label12.TabIndex = 112;
-            this.label12.Text = "2．请仔细核对身份信息，然后输入电话号码。";
+            this.newHead1.Location = new System.Drawing.Point(0, 0);
+            this.newHead1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newHead1.Name = "newHead1";
+            this.newHead1.Size = new System.Drawing.Size(1365, 125);
+            this.newHead1.TabIndex = 117;
             // 
-            // label3
+            // panel3
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(75, 327);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1231, 24);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "4．\t请在现场预约、挂号、缴费、取药、查询本人就诊信息时主动出示此二维码。";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(75, 293);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(993, 26);
-            this.label2.TabIndex = 110;
-            this.label2.Text = "3．\t办理完成后请在打印机处拿走您的纸质电子健康卡二维码，也可直接使用微信公众号中的电子健康卡二维码就诊。";
-            // 
-            // lblPatientName
-            // 
-            this.lblPatientName.AutoSize = true;
-            this.lblPatientName.BackColor = System.Drawing.Color.Transparent;
-            this.lblPatientName.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblPatientName.ForeColor = System.Drawing.Color.White;
-            this.lblPatientName.Location = new System.Drawing.Point(75, 231);
-            this.lblPatientName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPatientName.Name = "lblPatientName";
-            this.lblPatientName.Size = new System.Drawing.Size(594, 26);
-            this.lblPatientName.TabIndex = 109;
-            this.lblPatientName.Text = "1．\t请将二代身份证放在身份证感应区，系统会自助读取身份证信息。";
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.ucTime1);
+            this.panel3.Controls.Add(this.btnReturn);
+            this.panel3.Controls.Add(this.btnExit);
+            this.panel3.Location = new System.Drawing.Point(2, 860);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1363, 100);
+            this.panel3.TabIndex = 118;
             // 
             // FormElectronicsInput
             // 
@@ -674,6 +686,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -722,5 +735,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblPatientName;
+        private System.Windows.Forms.Panel panel3;
+        private Inc.NewHead newHead1;
     }
 }

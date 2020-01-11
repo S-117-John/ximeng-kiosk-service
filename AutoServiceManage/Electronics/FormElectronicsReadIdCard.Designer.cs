@@ -34,7 +34,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.backGroundPanelTrend1 = new AutoServiceManage.Inc.BackGroundPanelTrend(this.components);
-            this.ucHead1 = new AutoServiceManage.Inc.UCHead();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,7 +45,10 @@
             this.ucTime1 = new AutoServiceManage.Inc.UcTime();
             this.btnExit = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Label();
+            this.newHead1 = new AutoServiceManage.Inc.NewHead();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.backGroundPanelTrend1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // backgroundWorker2
@@ -65,8 +67,9 @@
             // 
             // backGroundPanelTrend1
             // 
-            this.backGroundPanelTrend1.BackgroundImage = global::AutoServiceManage.Properties.Resources.自助预约_背景;
-            this.backGroundPanelTrend1.Controls.Add(this.ucHead1);
+            this.backGroundPanelTrend1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backGroundPanelTrend1.BackgroundImage")));
+            this.backGroundPanelTrend1.Controls.Add(this.panel1);
+            this.backGroundPanelTrend1.Controls.Add(this.newHead1);
             this.backGroundPanelTrend1.Controls.Add(this.label7);
             this.backGroundPanelTrend1.Controls.Add(this.label6);
             this.backGroundPanelTrend1.Controls.Add(this.label5);
@@ -76,23 +79,12 @@
             this.backGroundPanelTrend1.Controls.Add(this.lblPatientName);
             this.backGroundPanelTrend1.Controls.Add(this.label1);
             this.backGroundPanelTrend1.Controls.Add(this.ucTime1);
-            this.backGroundPanelTrend1.Controls.Add(this.btnExit);
-            this.backGroundPanelTrend1.Controls.Add(this.btnReturn);
             this.backGroundPanelTrend1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backGroundPanelTrend1.Location = new System.Drawing.Point(0, 0);
             this.backGroundPanelTrend1.Margin = new System.Windows.Forms.Padding(4);
             this.backGroundPanelTrend1.Name = "backGroundPanelTrend1";
             this.backGroundPanelTrend1.Size = new System.Drawing.Size(1365, 960);
             this.backGroundPanelTrend1.TabIndex = 1;
-            // 
-            // ucHead1
-            // 
-            this.ucHead1.BackColor = System.Drawing.Color.Transparent;
-            this.ucHead1.Location = new System.Drawing.Point(13, 22);
-            this.ucHead1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.ucHead1.Name = "ucHead1";
-            this.ucHead1.Size = new System.Drawing.Size(1352, 139);
-            this.ucHead1.TabIndex = 117;
             // 
             // label7
             // 
@@ -109,10 +101,10 @@
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Image = global::AutoServiceManage.Properties.Resources.二代身份证;
-            this.label6.Location = new System.Drawing.Point(789, 458);
+            this.label6.Location = new System.Drawing.Point(749, 458);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(459, 332);
+            this.label6.Size = new System.Drawing.Size(459, 294);
             this.label6.TabIndex = 106;
             // 
             // label5
@@ -124,7 +116,7 @@
             this.label5.Location = new System.Drawing.Point(69, 458);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(649, 386);
+            this.label5.Size = new System.Drawing.Size(649, 314);
             this.label5.TabIndex = 105;
             this.label5.Text = "请刷监护人身份证\r\n\r\n等待读取...";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -134,7 +126,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(69, 256);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
@@ -146,7 +138,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(69, 320);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -159,7 +151,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(69, 286);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -172,7 +164,7 @@
             this.lblPatientName.AutoSize = true;
             this.lblPatientName.BackColor = System.Drawing.Color.Transparent;
             this.lblPatientName.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblPatientName.ForeColor = System.Drawing.Color.White;
+            this.lblPatientName.ForeColor = System.Drawing.Color.Black;
             this.lblPatientName.Location = new System.Drawing.Point(69, 224);
             this.lblPatientName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPatientName.Name = "lblPatientName";
@@ -184,7 +176,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(53, 169);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -199,7 +191,7 @@
             this.ucTime1.Location = new System.Drawing.Point(23, 1650);
             this.ucTime1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.ucTime1.Name = "ucTime1";
-            this.ucTime1.Sec = 5;
+            this.ucTime1.Sec = 4;
             this.ucTime1.Size = new System.Drawing.Size(400, 69);
             this.ucTime1.TabIndex = 69;
             // 
@@ -209,8 +201,8 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnExit.Image = global::AutoServiceManage.Properties.Resources.退出;
-            this.btnExit.Location = new System.Drawing.Point(1173, 838);
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1151, 3);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(107, 100);
@@ -223,13 +215,32 @@
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(89)))), ((int)(((byte)(0)))));
-            this.btnReturn.Image = global::AutoServiceManage.Properties.Resources.返回;
-            this.btnReturn.Location = new System.Drawing.Point(1027, 838);
+            this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
+            this.btnReturn.Location = new System.Drawing.Point(968, 0);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(107, 100);
             this.btnReturn.TabIndex = 89;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // newHead1
+            // 
+            this.newHead1.Location = new System.Drawing.Point(0, 0);
+            this.newHead1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newHead1.Name = "newHead1";
+            this.newHead1.Size = new System.Drawing.Size(1365, 125);
+            this.newHead1.TabIndex = 117;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnReturn);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Location = new System.Drawing.Point(3, 857);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1362, 100);
+            this.panel1.TabIndex = 118;
             // 
             // FormElectronicsReadIdCard
             // 
@@ -245,6 +256,7 @@
             this.Load += new System.EventHandler(this.FrmSendCardMain_Load);
             this.backGroundPanelTrend1.ResumeLayout(false);
             this.backGroundPanelTrend1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -253,7 +265,6 @@
 
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Inc.UCHead ucHead1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -267,5 +278,7 @@
         private System.Windows.Forms.Label btnReturn;
         private Inc.BackGroundPanelTrend backGroundPanelTrend1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private Inc.NewHead newHead1;
     }
 }

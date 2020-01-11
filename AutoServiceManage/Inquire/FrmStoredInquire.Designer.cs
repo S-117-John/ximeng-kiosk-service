@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStoredInquire));
-            this.ucHead1 = new AutoServiceManage.Inc.UCHead();
             this.ucTime1 = new AutoServiceManage.Inc.UcTime();
             this.gdcMain = new DevExpress.XtraGrid.GridControl();
             this.gdvMain = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -43,41 +42,42 @@
             this.lblOneWeek = new System.Windows.Forms.Label();
             this.lblOneMoth = new System.Windows.Forms.Label();
             this.lblThreeMoth = new System.Windows.Forms.Label();
+            this.newHead1 = new AutoServiceManage.Inc.NewHead();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gdcMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcReturn)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ucHead1
-            // 
-            this.ucHead1.BackColor = System.Drawing.Color.Transparent;
-            this.ucHead1.Location = new System.Drawing.Point(10, 30);
-            this.ucHead1.Name = "ucHead1";
-            this.ucHead1.Size = new System.Drawing.Size(1014, 93);
-            this.ucHead1.TabIndex = 0;
             // 
             // ucTime1
             // 
             this.ucTime1.AutoClose = false;
             this.ucTime1.BackColor = System.Drawing.Color.Transparent;
-            this.ucTime1.Location = new System.Drawing.Point(10, 720);
+            this.ucTime1.Location = new System.Drawing.Point(29, 27);
+            this.ucTime1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ucTime1.Name = "ucTime1";
-            this.ucTime1.Sec = 52;
-            this.ucTime1.Size = new System.Drawing.Size(180, 30);
+            this.ucTime1.Sec = 51;
+            this.ucTime1.Size = new System.Drawing.Size(240, 38);
             this.ucTime1.TabIndex = 1;
             // 
             // gdcMain
             // 
-            this.gdcMain.Location = new System.Drawing.Point(33, 173);
+            // 
+            // 
+            // 
+            this.gdcMain.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gdcMain.Location = new System.Drawing.Point(44, 216);
             this.gdcMain.LookAndFeel.SkinName = "Blue";
             this.gdcMain.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gdcMain.MainView = this.gdvMain;
+            this.gdcMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gdcMain.Name = "gdcMain";
             this.gdcMain.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gdcMain.Size = new System.Drawing.Size(958, 483);
+            this.gdcMain.Size = new System.Drawing.Size(1277, 500);
             this.gdcMain.TabIndex = 68;
             this.gdcMain.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gdvMain});
@@ -157,9 +157,10 @@
             this.pcExit.BackColor = System.Drawing.Color.Transparent;
             this.pcExit.Image = ((System.Drawing.Image)(resources.GetObject("pcExit.Image")));
             this.pcExit.InitialImage = ((System.Drawing.Image)(resources.GetObject("pcExit.InitialImage")));
-            this.pcExit.Location = new System.Drawing.Point(880, 670);
+            this.pcExit.Location = new System.Drawing.Point(1174, 0);
+            this.pcExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcExit.Name = "pcExit";
-            this.pcExit.Size = new System.Drawing.Size(80, 80);
+            this.pcExit.Size = new System.Drawing.Size(107, 100);
             this.pcExit.TabIndex = 85;
             this.pcExit.TabStop = false;
             this.pcExit.Click += new System.EventHandler(this.pcExit_Click);
@@ -169,9 +170,10 @@
             this.pcReturn.BackColor = System.Drawing.Color.Transparent;
             this.pcReturn.Image = ((System.Drawing.Image)(resources.GetObject("pcReturn.Image")));
             this.pcReturn.InitialImage = ((System.Drawing.Image)(resources.GetObject("pcReturn.InitialImage")));
-            this.pcReturn.Location = new System.Drawing.Point(770, 670);
+            this.pcReturn.Location = new System.Drawing.Point(980, 0);
+            this.pcReturn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcReturn.Name = "pcReturn";
-            this.pcReturn.Size = new System.Drawing.Size(80, 80);
+            this.pcReturn.Size = new System.Drawing.Size(107, 100);
             this.pcReturn.TabIndex = 84;
             this.pcReturn.TabStop = false;
             this.pcReturn.Click += new System.EventHandler(this.pcReturn_Click);
@@ -182,9 +184,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 133);
+            this.label1.Location = new System.Drawing.Point(52, 166);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 24);
+            this.label1.Size = new System.Drawing.Size(137, 30);
             this.label1.TabIndex = 86;
             this.label1.Text = "预存查询";
             // 
@@ -195,11 +198,11 @@
             this.lblOneWeek.Font = new System.Drawing.Font("黑体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblOneWeek.ForeColor = System.Drawing.Color.Transparent;
             this.lblOneWeek.Image = ((System.Drawing.Image)(resources.GetObject("lblOneWeek.Image")));
-            this.lblOneWeek.Location = new System.Drawing.Point(39, 688);
+            this.lblOneWeek.Location = new System.Drawing.Point(52, 747);
+            this.lblOneWeek.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOneWeek.Name = "lblOneWeek";
-            this.lblOneWeek.Size = new System.Drawing.Size(130, 30);
+            this.lblOneWeek.Size = new System.Drawing.Size(173, 67);
             this.lblOneWeek.TabIndex = 87;
-            this.lblOneWeek.Text = "查询一周内";
             this.lblOneWeek.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblOneWeek.Click += new System.EventHandler(this.lblOneWeek_Click);
             // 
@@ -210,11 +213,11 @@
             this.lblOneMoth.Font = new System.Drawing.Font("黑体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblOneMoth.ForeColor = System.Drawing.Color.Transparent;
             this.lblOneMoth.Image = ((System.Drawing.Image)(resources.GetObject("lblOneMoth.Image")));
-            this.lblOneMoth.Location = new System.Drawing.Point(188, 687);
+            this.lblOneMoth.Location = new System.Drawing.Point(305, 754);
+            this.lblOneMoth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOneMoth.Name = "lblOneMoth";
-            this.lblOneMoth.Size = new System.Drawing.Size(130, 30);
+            this.lblOneMoth.Size = new System.Drawing.Size(173, 53);
             this.lblOneMoth.TabIndex = 88;
-            this.lblOneMoth.Text = "查询一月内";
             this.lblOneMoth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblOneMoth.Click += new System.EventHandler(this.lblOneWeek_Click);
             // 
@@ -225,30 +228,49 @@
             this.lblThreeMoth.Font = new System.Drawing.Font("黑体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblThreeMoth.ForeColor = System.Drawing.Color.Transparent;
             this.lblThreeMoth.Image = ((System.Drawing.Image)(resources.GetObject("lblThreeMoth.Image")));
-            this.lblThreeMoth.Location = new System.Drawing.Point(343, 687);
+            this.lblThreeMoth.Location = new System.Drawing.Point(569, 747);
+            this.lblThreeMoth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThreeMoth.Name = "lblThreeMoth";
-            this.lblThreeMoth.Size = new System.Drawing.Size(130, 30);
+            this.lblThreeMoth.Size = new System.Drawing.Size(173, 70);
             this.lblThreeMoth.TabIndex = 89;
-            this.lblThreeMoth.Text = "查询三月内";
             this.lblThreeMoth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblThreeMoth.Click += new System.EventHandler(this.lblOneWeek_Click);
             // 
+            // newHead1
+            // 
+            this.newHead1.Location = new System.Drawing.Point(1, 1);
+            this.newHead1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newHead1.Name = "newHead1";
+            this.newHead1.Size = new System.Drawing.Size(1365, 125);
+            this.newHead1.TabIndex = 90;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.ucTime1);
+            this.panel1.Controls.Add(this.pcReturn);
+            this.panel1.Controls.Add(this.pcExit);
+            this.panel1.Location = new System.Drawing.Point(1, 860);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1365, 100);
+            this.panel1.TabIndex = 91;
+            // 
             // FrmStoredInquire
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AutoServiceManage.Properties.Resources.自助预约_背景;
-            this.ClientSize = new System.Drawing.Size(1024, 768);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1365, 960);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.newHead1);
             this.Controls.Add(this.lblThreeMoth);
             this.Controls.Add(this.lblOneMoth);
             this.Controls.Add(this.lblOneWeek);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pcExit);
-            this.Controls.Add(this.pcReturn);
             this.Controls.Add(this.gdcMain);
-            this.Controls.Add(this.ucTime1);
-            this.Controls.Add(this.ucHead1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmStoredInquire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmStoredInquire";
@@ -259,14 +281,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcReturn)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Inc.UCHead ucHead1;
         private Inc.UcTime ucTime1;
         private DevExpress.XtraGrid.GridControl gdcMain;
         private DevExpress.XtraGrid.Views.Grid.GridView gdvMain;
@@ -280,5 +301,7 @@
         private System.Windows.Forms.Label lblOneWeek;
         private System.Windows.Forms.Label lblOneMoth;
         private System.Windows.Forms.Label lblThreeMoth;
+        private Inc.NewHead newHead1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
