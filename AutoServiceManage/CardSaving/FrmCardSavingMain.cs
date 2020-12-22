@@ -166,7 +166,7 @@ namespace AutoServiceManage.CardSaving
             }
             Savingsucceed = frm.Savingsucceed;
             RechargeMoney = frm.RechargeMoney;
-            MODETYPE = "银行卡";
+            MODETYPE = "线上银行卡";
             frm.Dispose();
             
         }

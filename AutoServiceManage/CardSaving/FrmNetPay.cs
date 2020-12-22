@@ -206,11 +206,11 @@ namespace AutoServiceManage.CardSaving
                     string mPaymethod = "";
                     if (this.payMethod.Equals("1"))
                     {
-                        mPaymethod = "微信";
+                        mPaymethod = "线上微信";
                     }
                     else
                     {
-                        mPaymethod = "支付宝";
+                        mPaymethod = "线上支付宝";
                     }
 
                     if (this.payType.Equals("住院充值"))
