@@ -881,7 +881,7 @@ namespace AutoServiceManage.Charge
             if (mDialogResult == DialogResult.OK)
             {
                 string hisno = payFrm.hisNo;
-                NetPay(hisno,"微信");
+                NetPay(hisno,"线上微信");
 
                 SkyComm.ShowMessageInfo(payFrm.PayType + "成功！");
             }
@@ -977,7 +977,7 @@ namespace AutoServiceManage.Charge
             if (mDialogResult == DialogResult.OK)
             {
                 string hisno = payFrm.hisNo;
-                NetPay(hisno,"支付宝");
+                NetPay(hisno,"线上支付宝");
 
                 SkyComm.ShowMessageInfo(payFrm.PayType + "成功！");
             }
