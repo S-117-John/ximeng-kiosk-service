@@ -173,11 +173,11 @@ namespace AutoServiceManage.Presenter
 
                 if (payMethod.Contains("微信"))
                 {
-                    payMethod = "微信";
+                    payMethod = "线上微信";
                 }
                 else
                 {
-                    payMethod = "支付宝";
+                    payMethod = "线上支付宝";
                 }
 
                 mHashtable.Add("@BUSINESSTYPE", payMethod); //交易类型
