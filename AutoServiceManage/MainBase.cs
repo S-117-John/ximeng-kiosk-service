@@ -480,51 +480,51 @@ namespace AutoServiceManage
                 }
             }
 
-            ////根据是否有预约信息，如果有预约信息，弹出界面选择。
-            //double minutes = Convert.ToDouble(SystemInfo.SystemConfigs["预约挂号报到延时时间"].DefaultValue);
-            //BespeakRegisterFacade bespeakFacade = new BespeakRegisterFacade();
-            //CommonFacade commonFacade = new CommonFacade();
-            //DateTime ServerdateTime = commonFacade.GetServerDateTime();
-            //DataSet bespeakInfoData = bespeakFacade.FindCurrentBespeakByDiagnoseID(SkyComm.DiagnoseID, 1, ServerdateTime.AddMinutes(-minutes));
-            //bool IsQueryBespeakData = false;
-            ////ui.SynUpdateUI(() =>
-            //{
-            //    if (bespeakInfoData.Tables[0].Rows.Count == 0)
-            //    {
-            //        #region 没有预约信息时查询预约
+            //根据是否有预约信息，如果有预约信息，弹出界面选择。
+            double minutes = Convert.ToDouble(SystemInfo.SystemConfigs["预约挂号报到延时时间"].DefaultValue);
+            BespeakRegisterFacade bespeakFacade = new BespeakRegisterFacade();
+            CommonFacade commonFacade = new CommonFacade();
+            DateTime ServerdateTime = commonFacade.GetServerDateTime();
+            DataSet bespeakInfoData = bespeakFacade.FindCurrentBespeakByDiagnoseID(SkyComm.DiagnoseID, 1, ServerdateTime.AddMinutes(-minutes));
+            bool IsQueryBespeakData = false;
+            //ui.SynUpdateUI(() =>
+            {
+                if (bespeakInfoData.Tables[0].Rows.Count == 0)
+                {
+                    #region 没有预约信息时查询预约
 
-            //        SkyComm.ShowMessageInfo("没有查询到预约信息，如果已经预约请到相应窗口取号!");
-            //        return;
-            //        #endregion
-            //    }
+                    SkyComm.ShowMessageInfo("没有查询到预约信息，如果已经预约请到相应窗口取号!");
+                    return;
+                    #endregion
+                }
 
-            //    //有预约信息时
-            //    if (bespeakInfoData == null || bespeakInfoData.Tables[0].Rows.Count > 0)
-            //    {
-            //        #region 有预约信息确认取号
-            //        //有预约信息,再判断预约信息是几条
+                //有预约信息时
+                if (bespeakInfoData == null || bespeakInfoData.Tables[0].Rows.Count > 0)
+                {
+                    #region 有预约信息确认取号
+                    //有预约信息,再判断预约信息是几条
 
-            //        FrmBespeakList frm = new FrmBespeakList();
-            //        try
-            //        {
-            //            frm.dsBespeak = bespeakInfoData;
-            //            frm.IsQueryBespeakData = IsQueryBespeakData;
-            //            if (frm.ShowDialog(owner) == System.Windows.Forms.DialogResult.OK)
-            //            {
-            //                SkyComm.GetCardBalance();
-            //            }
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            Skynet.LoggingService.LogService.GlobalInfoMessage("就诊号：" + SkyComm.DiagnoseID + "取号失败：" + ex.Message);
-            //        }
-            //        finally
-            //        {
-            //            frm.Dispose();
-            //        }
-            //        #endregion
-            //    }
-            //}
+                    FrmBespeakList frm = new FrmBespeakList();
+                    try
+                    {
+                        frm.dsBespeak = bespeakInfoData;
+                        frm.IsQueryBespeakData = IsQueryBespeakData;
+                        if (frm.ShowDialog(owner) == System.Windows.Forms.DialogResult.OK)
+                        {
+                            SkyComm.GetCardBalance();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Skynet.LoggingService.LogService.GlobalInfoMessage("就诊号：" + SkyComm.DiagnoseID + "取号失败：" + ex.Message);
+                    }
+                    finally
+                    {
+                        frm.Dispose();
+                    }
+                    #endregion
+                }
+            }
 
             ExitScanCard();
         }
